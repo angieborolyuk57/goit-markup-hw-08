@@ -1,0 +1,66 @@
+/* Auth-nav links */
+ 
+.auth-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  .auth-nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:auto;
+  }
+ 
+  .email,
+  .tel-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  .auth-item + .auth-item{
+    margin-left:40px;
+  }
+
+  
+  .auth-item {
+  color:#757575;
+  text-decoration:none;
+
+  transition-property: color;
+  transition-duration:250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .auth-item:hover,
+  .auth-item:focus {
+  color: var(--accent-color);
+  }
+
+.envelope,
+.tel-icon{
+  fill:currentColor;
+  margin-right:10px;
+
+  transition-property: fill;
+  transition-duration:250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.envelope:hover,
+.envelope:focus{
+ fill:var(--accent-color);
+}
+.tel-icon:hover,
+.tel-icon:focus{
+ fill:var(--accent-color);
+}
+
+.tel-header:hover{
+  fill:var(--accent-color);
+}

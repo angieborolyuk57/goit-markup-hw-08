@@ -1,0 +1,54 @@
+/* what we do */
+
+.section-title{
+    font-size: 36px;
+    line-height:1.16;
+    text-align: center;
+    color: var(--headline-color);
+    
+    margin-top:0px;
+    margin-bottom:50px;
+    }
+    
+    
+    .activity{
+    
+      &__title{
+        margin-top:0px;
+        margin-bottom:50px;
+      }
+      
+      &__list{
+        display:flex;
+        justify-content:center;
+      }
+      
+      .activity__item:not(:last-child){
+        margin-right:30px;
+      }
+      &__overlay{
+        position:absolute;
+        left:0;
+        bottom:0;
+        width:100%;
+        height:70px;
+        background-color:rgba(47, 48, 58, 0.8);
+        padding:27px;
+      }
+    
+      &__overlay-text{
+        margin:0;
+      font-style:bold;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+      text-transform: uppercase;
+      color:var(--primary-white);
+      
+      }
+
+    }
+    
+    .img-container{
+      position:relative;
+    }

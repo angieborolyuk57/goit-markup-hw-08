@@ -1,0 +1,32 @@
+
+        *, ::after, ::before {
+      box-sizing: border-box;
+    }
+    
+html{
+  scroll-behavior: smooth;
+}
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0.03em;
+      background-color: var(--primary-white);
+      color:var(--main-text-color);
+      }
+
+    .list{
+        margin:0px;
+        padding:0px;
+        list-style:none;
+      }
+      
+
+      .section:nth-child(4){
+        background-color:#F5F4FA;
+      
+      }
+
+      .section{
+        padding-top:94px;
+        padding-bottom:94px;
+      }

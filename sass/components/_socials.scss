@@ -1,0 +1,46 @@
+
+/*Social links icons*/
+
+.socials{
+    display:flex;
+    align-items: center;
+    gap:10px;
+  
+    margin-left:32px;
+    margin-right:32px;
+  
+    &__item{
+      width: 44px;
+      height: 44px;
+      border-radius: 1px transparent;
+    }
+    
+    &__icon{
+      display:inline-block;
+      object-fit: cover;
+    }
+    
+    &__link{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      fill:var(--icon-fill-color);
+    
+      width: 44px;
+      height: 44px;
+    
+      transition-property: fill, background-color, border-radius;
+      transition-duration:250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__link:hover,
+    &__link:focus{
+      width: 44px;
+      height: 44px;
+      fill:var(--primary-white);
+      background-color: var(--accent-color);  
+      border-radius: 50%;
+    }
+  
+  }
