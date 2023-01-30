@@ -1,21 +1,15 @@
 /* what we do */
 
-.section-title{
-    font-size: 36px;
-    line-height:1.16;
-    text-align: center;
-    color: var(--headline-color);
-    
-    margin-top:0px;
-    margin-bottom:50px;
-    }
-    
-    
     .activity{
+
+      @media (max-width:1199px){
+        display:none;
+      }
     
       &__title{
         margin-top:0px;
         margin-bottom:50px;
+
       }
       
       &__list{

@@ -1,33 +1,52 @@
 /* Form*/
 .subscription{
-    width:570px;
+    width:450px;
     height:86px;
-    margin-left:94px;
     display:flex;
     flex-direction: column;
+    align-items: center;
+
+    @media (min-width:1200px){
+      margin-left:94px;
+      width:570px;
+    }
   
     &__label{
-      margin-top:12px;
       font-weight: 700;
       font-size:14px;
       line-height: 1.14;
       text-transform: uppercase;
       color: var(--primary-white);
       margin-bottom:20px;
+     
+
+      @media (min-width:1200px){
+        margin-top:12px;
+      }
     }
     
     &__flex{
       display:flex;
+      flex-direction: column;
+align-items: center;
+      @media screen and (min-width:1200px){
+        flex-direction: row;
+      }
     }
     
     &__input{
-      width:358px;
+      width:450px;
       height:50px;
       padding:16px 18px;
-      margin-right:12px;
+      margin-bottom:20px;
       color:var(--primary-white);
       background-color: #2F303A;
       border: 1px solid #FFFFFF4D;
+
+      @media (min-width:1200px){
+        width:358px;
+        margin-right:12px;
+      }
     }
     
     &__input:focus{
@@ -44,7 +63,7 @@
       padding:0;
       display:flex;
       align-items:center;
-      justify-content: center;
+      justify-content: center;      
       }
   }
   

@@ -1,30 +1,39 @@
 /* Auth-nav links */
  
 .auth-nav {
+  display:none;
+
+  @media (min-width:768px){
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
+
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: auto;
   }
 
-  .auth-nav{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-left:auto;
-  }
- 
-  .email,
-  .tel-header {
-    font-weight: 500;
+  @media (min-width:1200px) {
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
+
+   flex-direction: row;
+    align-items: center;
+  } 
+}
+
 
   .auth-item + .auth-item{
+    margin-top: 10px;
+
+    @media (min-width:1200px){
     margin-left:40px;
-  }
+    margin-top:0;
+  } 
+}
 
   
   .auth-item {
@@ -49,18 +58,4 @@
   transition-property: fill;
   transition-duration:250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.envelope:hover,
-.envelope:focus{
- fill:var(--accent-color);
-}
-.tel-icon:hover,
-.tel-icon:focus{
- fill:var(--accent-color);
-}
-
-.tel-header:hover{
-  fill:var(--accent-color);
 }

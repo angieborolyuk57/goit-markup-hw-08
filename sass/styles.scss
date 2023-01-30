@@ -1,5 +1,6 @@
 @import  './utils/fonts';
 @import  './utils/variables';
+@import  './utils/breakpoints';
 
 @import  './base/reset';
 
@@ -11,6 +12,7 @@
 @import  './layouts/hero-section';
 
 @import  './components/button';
+@import  './components/mobile-menu';
 @import  './layouts/feature-section';
 
 @import  './layouts/activity-section';
