@@ -6,10 +6,10 @@
 
     @media (min-width:1200px){
       padding-top:94px;
+      padding-bottom:118px;
     }
 
     &__list{
-
       @media (min-width:768px){
         display:flex;
         flex-wrap: wrap;
@@ -18,15 +18,14 @@
     
     &__item {
       display:block;
-      width:450px;
 
       @media (min-width:768px){
         width:354px;
        gap:30px;
       }
-
       @media (min-width:1200px){
         width: 270px;
+        margin-bottom:0px;
       }
     }
 
@@ -48,10 +47,14 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align:center;
   
   margin-top: 0px;
     margin-bottom:10px;
     color: var(--headline-color);
+    @media (min-width:768px){
+      text-align: left;
+    }
   }
     
   &__text {

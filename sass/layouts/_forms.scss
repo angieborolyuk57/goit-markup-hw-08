@@ -1,14 +1,14 @@
 /* Form*/
 .subscription{
-    width:450px;
-    height:86px;
     display:flex;
     flex-direction: column;
     align-items: center;
 
     @media (min-width:1200px){
       margin-left:94px;
-      width:570px;
+      margin-bottom: 65px;
+      align-items: flex-start;
+      
     }
   
     &__label{
@@ -22,20 +22,21 @@
 
       @media (min-width:1200px){
         margin-top:12px;
+        
       }
     }
     
     &__flex{
       display:flex;
       flex-direction: column;
-align-items: center;
+     
       @media screen and (min-width:1200px){
         flex-direction: row;
       }
     }
     
     &__input{
-      width:450px;
+      width:300px;
       height:50px;
       padding:16px 18px;
       margin-bottom:20px;
@@ -43,10 +44,16 @@ align-items: center;
       background-color: #2F303A;
       border: 1px solid #FFFFFF4D;
 
+      @media (min-width:768px){
+        width:450px;
+      }
+
       @media (min-width:1200px){
         width:358px;
         margin-right:12px;
+        margin-bottom:0px;
       }
+
     }
     
     &__input:focus{
@@ -63,12 +70,16 @@ align-items: center;
       padding:0;
       display:flex;
       align-items:center;
-      justify-content: center;      
+      justify-content: center;
+      
+      margin-left: auto;
+      margin-right: auto;
       }
   }
   
     .send-icon{
       margin-left:10px;
     }
+    
 
     
